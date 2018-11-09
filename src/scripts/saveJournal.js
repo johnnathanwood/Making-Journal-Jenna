@@ -11,7 +11,6 @@ const saveJournal = () => {
         if (!title || !content || !date || !mood) {
             alert("please fill out the form!")
         } else {
-            document.querySelector("#output").innerHTML = ""
             const entry = {
                 title: title,
                 content: content,

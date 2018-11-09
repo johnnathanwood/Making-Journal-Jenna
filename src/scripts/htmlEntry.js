@@ -6,6 +6,8 @@ const htmlEntry = (entry) => {
   <p>${entry.date}</p>
   <p>${entry.content}</p>
   <p>${entry.mood}</p>
+  <button id="delete!${entry.id}">Delete</button>
+  <button id="edit!${entry.id}">Edit</button>
   </div>`
 }
 

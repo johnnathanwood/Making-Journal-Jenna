@@ -6,6 +6,7 @@ const dom = (entry) => {
 }
 
 const domRender = () => {
+  document.querySelector("#output").innerHTML = ""
   dataManager.getEntries()
     .then(entries => {
       entries.forEach(entry => {
