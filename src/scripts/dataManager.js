@@ -17,9 +17,8 @@ const dataManager = {
     return fetch(`${url}/${id}`, {
       method: "DELETE",
     }).then(res => res.json());
-  }
-}
-editEntry: (entry,id) => {
+  },
+editEntry: (entry, id) => {
   return fetch(`${url}/${id}`, {
     method: "PUT",
     headers: {
@@ -27,6 +26,13 @@ editEntry: (entry,id) => {
     },
     body: JSON.stringify(entry)
   }).then(res => res.json());
+},
+  singleEntry: (id) => {
+    return fetch(`${url}/${id}`)
+      .then(res => res.json())
+  }
 }
+
+
 
 export { dataManager }

@@ -10,6 +10,7 @@ const journal = () => {
     domRender()
     saveJournal()
     edJournal()
+    
 
 }
 
